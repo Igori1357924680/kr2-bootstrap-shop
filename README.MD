@@ -8,6 +8,9 @@
 ## Используемый фреймворк
 Bootstrap (версия 5.3.8).
 
+## Ссылка на опубликованный проект
+GitHub Pages: https://Igori1357924680.github.io/kr2-bootstrap-shop/
+
 ## Способ подключения
 Bootstrap подключён через CDN (Content Delivery Network).
 В `head` HTML-документа подключен `bootstrap.min.css`, а перед закрывающим тегом `body` — `bootstrap.bundle.min.js`.
