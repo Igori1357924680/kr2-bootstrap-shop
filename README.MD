@@ -14,7 +14,6 @@ Bootstrap подключён через CDN (Content Delivery Network).
 Собственный файл `css/custom.css` подключён после Bootstrap для точечного переопределения стилей.
 
 ## Структура проекта
-```text
 kr2-bootstrap-shop/
 ├── index.html
 ├── catalog.html
