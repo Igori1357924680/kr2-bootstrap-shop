@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Смартфон Nova X5 — страница товара PlayTable на Bootstrap.">
+  <title>Смартфон Nova X5 — PlayTable</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+  <!-- Навигация -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">PlayTable</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="product.html">Товар</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow-1 py-5">
+    <div class="container">
+      
+      <!-- Хлебные крошки -->
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Смартфон Nova X5</li>
+        </ol>
+      </nav>
+
+      <!-- Карточка товара -->
+      <div class="row g-5">
+        
+        <!-- Левая часть (изображение-заглушка) -->
+        <div class="col-md-6">
+          <div class="bg-white rounded shadow-sm d-flex align-items-center justify-content-center border" style="min-height: 400px;">
+            <span class="text-muted fs-4">Изображение товара</span>
+          </div>
+        </div>
+
+        <!-- Правая часть (описание) -->
+        <div class="col-md-6">
+          <span class="badge bg-success mb-2">Новинка</span>
+          <h1 class="mb-3">Смартфон Nova X5</h1>
+          <p class="lead text-muted mb-4">Флагманский смартфон с экраном 6.5", камерой 108 МП и поддержкой 5G.</p>
+          <h2 class="text-primary fw-bold mb-4">39 990 ₽</h2>
+          
+          <!-- Кнопка, открывающая модалку -->
+          <button type="button" class="btn btn-primary btn-lg mb-4" data-bs-toggle="modal" data-bs-target="#orderModal">
+            Оставить заявку
+          </button>
+
+          <!-- Таблица характеристик -->
+          <h4 class="mb-3">Характеристики</h4>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead class="table-light">
+                <tr>
+                  <th scope="col">Параметр</th>
+                  <th scope="col">Значение</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Экран</td><td>6.5", AMOLED, 120 Гц</td></tr>
+                <tr><td>Память</td><td>256 ГБ + 8 ГБ ОЗУ</td></tr>
+                <tr><td>Камера</td><td>108 МП + 12 МП + 8 МП</td></tr>
+                <tr><td>Аккумулятор</td><td>5000 мА·ч, быстрая зарядка 65 Вт</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Модальное окно (Bootstrap) -->
+  <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="orderModalLabel">Оставить заявку</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="modalName" class="form-label">Имя</label>
+              <input type="text" class="form-control" id="modalName" required>
+            </div>
+            <div class="mb-3">
+              <label for="modalPhone" class="form-label">Телефон</label>
+              <input type="tel" class="form-control" id="modalPhone" required>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn btn-primary">Отправить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Подвал -->
+  <footer class="bg-dark text-light py-4 mt-auto">
+    <div class="container text-center">
+      <p class="mb-0">© 2026 PlayTable. Контрольная работа №2 (Bootstrap).</p>
+    </div>
+  </footer>
+
+  <!-- Обязательно JS Bundle для работы модального окна! -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
